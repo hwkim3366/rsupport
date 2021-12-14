@@ -1,5 +1,5 @@
 <div align="center">
-<h1>알서포트 과제</h1>
+<h1>알서포트 과제(REST API 공지사항 CRUD)</h1>
 </div>
 
 ## 1.설치

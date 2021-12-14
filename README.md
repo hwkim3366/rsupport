@@ -26,8 +26,8 @@
 
     - `POST`
     - `localhost:8080/notice`
-    - `헤더 부분은 놔두고 Body 영역만 기재`
-    - `Body 영역 KEY : 'json_str', VALUE : 하단 포맷 참조`
+    - `헤더 부분은 놔두고 Body의 form-data 영역만 기재`
+    - `Body form-data 영역 KEY : 'json_str', VALUE : 하단 포맷 참조`
 
       {
         "title" : "공지제목",
@@ -63,7 +63,7 @@
     - `PUT`
     - `localhost:8080/notice/{noticeId}`
     - `헤더 정보 - KEY : content-type, VALUE : application/json`
-
+    - `Body Raw 영역 하단 포맷 참조`
 	{
 	  "title" : "공지제목 수정",
 	  "content" : "공지내용 수정",
@@ -76,7 +76,8 @@
 ## 9. 첨부파일 id별 수정(교체)
     - `PUT`
     - `localhost:8080/notice/{noticeId}/attach/{attachmentId}`
-
+    - `헤더 부분은 놔두고 Body의 form-data 영역만 기재`
+    - `Body form-data 영역 KEY : 'json_str', VALUE : 하단 포맷 참조`
 	{
 	  "id" : 1,
 	  "name" : "수정 첨부 파일명"
